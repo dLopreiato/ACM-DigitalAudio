@@ -17,7 +17,6 @@ public:
 	// Constructs a WaveFile from a file in the wave format
 	WaveFile(std::ifstream* fileStream);
 	~WaveFile();
-	void setSample();
 	// Gets a sample from the data as a float. Sample number and channel are indexed.
 	float getSampleAsFloat(unsigned __int32 sampleNumber, unsigned __int16 channel);
 	// Sets a sample from a given float between 1 and -1. Sample number and channel are indexed.
